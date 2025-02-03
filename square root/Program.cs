@@ -6,6 +6,7 @@ double Y = 0; //user input
 double maxError = 0.001;
 int maxIterations = 100;
 
+
 double compute(double Y)
 {
     //reject Y=0
