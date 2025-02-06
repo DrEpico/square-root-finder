@@ -9,6 +9,7 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
@@ -18,7 +19,6 @@
                        VerticalAlignment="Center" 
                        Margin="0,0,10,0" 
                        Foreground="#2C3E50"/>
-            
             <TextBox x:Name="InputBox" 
                      Width="100" 
                      Height="40" 
@@ -26,13 +26,11 @@
                      BorderThickness="1" 
                      BorderBrush="#BDC3C7" 
                      Padding="5"/>
-            
             <Label Content="=" 
                    FontSize="24" 
                    VerticalAlignment="Center" 
                    Margin="10,0" 
                    Foreground="#2C3E50"/>
-            
             <Label x:Name="StatusLabel" 
                    Content="Waiting for input..." 
                    FontSize="16" 
@@ -60,33 +58,25 @@
             </Button.Resources>
         </Button>
 
-        <Border Grid.Row="2" 
+        <TextBlock Grid.Row="2" 
+                   Text="Logs" 
+                   FontSize="16" 
+                   Margin="0,0,0,10" 
+                   Foreground="#2C3E50"/>
+
+        <Border Grid.Row="3" 
                 BorderBrush="#BDC3C7" 
                 BorderThickness="1" 
                 CornerRadius="5" 
                 Background="White" 
                 Padding="10">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"/>
-                    <RowDefinition Height="*"/>
-                </Grid.RowDefinitions>
-
-                <TextBlock Grid.Row="0" 
-                           Text="Logs" 
-                           FontSize="16" 
-                           Margin="0,0,0,10" 
-                           Foreground="#2C3E50"/>
-
-                <TextBox x:Name="LogBox" 
-                         Grid.Row="1"
-                         TextWrapping="Wrap" 
-                         AcceptsReturn="True" 
-                         IsReadOnly="True" 
-                         Background="Transparent" 
-                         BorderThickness="0" 
-                         VerticalScrollBarVisibility="Auto"/>
-            </Grid>
+            <TextBox x:Name="LogBox" 
+                     TextWrapping="Wrap" 
+                     AcceptsReturn="True" 
+                     IsReadOnly="True" 
+                     Background="Transparent" 
+                     BorderThickness="0" 
+                     VerticalScrollBarVisibility="Auto"/>
         </Border>
     </Grid>
 </Window>
