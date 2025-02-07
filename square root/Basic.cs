@@ -18,7 +18,7 @@ namespace SquareRootCalculator
             // Named squareRoot as instruccted instead of "guess" which would've been a clearer name.
             double squareRoot = Y;
             double prevSquareRoot;
-            int i = 0;
+            int i = 1;
 
             do
             {
@@ -29,7 +29,8 @@ namespace SquareRootCalculator
                 //Console.WriteLine("Current guess: " + squareRoot);
                 i++;
             }
-            // Compare the outcome of the current iteration with the previous one to determine if the error is within the acceptable range.
+            // Compare the outcome of the current iteration with the previous one to determine if the error is
+            // within the acceptable range.
             while (Math.Abs(prevSquareRoot - squareRoot) > maxError && i < maxIterations);
             Console.WriteLine($"Calculation Complete. Square root of {Y} is {squareRoot}. \nNumber of iterations: {i}");
 
