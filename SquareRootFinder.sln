@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35431.28
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SquareRootCalculator", "square root\SquareRootCalculator.csproj", "{B8205597-B198-4629-9E38-991AF1EC6ABA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SquareRootCalculatorGUI", "SquareRootCalculatorGUI\SquareRootCalculatorGUI.csproj", "{362F5394-A918-42AB-A8E9-A8DBE2C5C047}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SquareRootCalculatorGUI", "SquareRootCalculatorGUI\SquareRootCalculatorGUI.csproj", "{362F5394-A918-42AB-A8E9-A8DBE2C5C047}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SquareRootCalculator", "SquareRootCalculatorCMD\SquareRootCalculator.csproj", "{0D804A99-73F7-46D5-9922-B714C8AD6A50}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B8205597-B198-4629-9E38-991AF1EC6ABA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B8205597-B198-4629-9E38-991AF1EC6ABA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B8205597-B198-4629-9E38-991AF1EC6ABA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B8205597-B198-4629-9E38-991AF1EC6ABA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{362F5394-A918-42AB-A8E9-A8DBE2C5C047}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{362F5394-A918-42AB-A8E9-A8DBE2C5C047}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{362F5394-A918-42AB-A8E9-A8DBE2C5C047}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{362F5394-A918-42AB-A8E9-A8DBE2C5C047}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D804A99-73F7-46D5-9922-B714C8AD6A50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D804A99-73F7-46D5-9922-B714C8AD6A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D804A99-73F7-46D5-9922-B714C8AD6A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D804A99-73F7-46D5-9922-B714C8AD6A50}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
