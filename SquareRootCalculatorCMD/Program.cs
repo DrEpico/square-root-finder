@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using SquareRootCalculator;
-
+﻿using SquareRootCalculator;
+using System;
 namespace square_root
 {
     class Program
@@ -21,9 +16,14 @@ namespace square_root
                 if (double.TryParse(input, out double number))
                 {
                     Console.WriteLine("Computing...");
-
-                    // Call the CalculateSquareRoot (static) method from the Basic class.
-                    Basic.CalculateSquareRoot(number);
+                    try
+                    {
+                        Calculator.CalculateSquareRoot(number);
+                    }
+                    catch (ArgumentException ex)
+                    {
+                        Console.WriteLine("Error: " + ex.Message);
+                    }
                 }
                 else
                 {

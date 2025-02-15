@@ -6,7 +6,10 @@
         public static double CalculateSquareRoot(double Y)
         {
             // Handle invalid inputs.
-            if (Y < 0) throw new ArgumentException("Cannot compute square root for a negative number");
+            if (Y < 0) 
+            {
+                throw new ArgumentException("Cannot compute square root for a negative number");
+            }            
             if (Y == 0) return 0;
 
             // Initialise the constants for the algorithm.
